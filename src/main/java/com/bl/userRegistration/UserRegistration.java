@@ -29,6 +29,15 @@ public class UserRegistration {
     }
 
 
+    // validating the mobile number using regex pattern that is country code followed by space and 10 digit number
+    public boolean validMobileNum(String email) {
+        Pattern pattern = Pattern.compile("[0-9]{2}\\s{0,1}[0-9]{10}$");
+        //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
+    }
+
+
 }
 
 

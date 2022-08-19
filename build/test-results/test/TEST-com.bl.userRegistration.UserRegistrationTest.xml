@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.userRegistration.UserRegistrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-08-19T06:28:05" hostname="LAPTOP-PG23OKAD" time="0.024">
+<testsuite name="com.bl.userRegistration.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-19T06:32:20" hostname="LAPTOP-PG23OKAD" time="0.021">
   <properties/>
-  <testcase name="validFirstName()" classname="com.bl.userRegistration.UserRegistrationTest" time="0.021"/>
-  <testcase name="validEmail()" classname="com.bl.userRegistration.UserRegistrationTest" time="0.001"/>
-  <testcase name="validLastName()" classname="com.bl.userRegistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="validMobileNum()" classname="com.bl.userRegistration.UserRegistrationTest" time="0.021"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
