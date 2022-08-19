@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.userRegistration.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-19T06:40:59" hostname="LAPTOP-PG23OKAD" time="0.019">
+<testsuite name="com.bl.userRegistration.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-19T06:45:41" hostname="LAPTOP-PG23OKAD" time="0.022">
   <properties/>
-  <testcase name="validPassword()" classname="com.bl.userRegistration.UserRegistrationTest" time="0.019"/>
+  <testcase name="validPasswordRule2()" classname="com.bl.userRegistration.UserRegistrationTest" time="0.022"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

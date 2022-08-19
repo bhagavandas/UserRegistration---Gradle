@@ -46,6 +46,14 @@ public class UserRegistration {
     }
 
 
+    // validating the password that has minimum 8 characters and one uppercase
+    public boolean validPasswordRule2(String pwd) {
+        Pattern pattern = Pattern.compile("[A-Z]{1}[a-z]{8,}$");
+        //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
+        Matcher matcher = pattern.matcher(pwd);
+        return matcher.matches();
+    }
+
 
 }
 
