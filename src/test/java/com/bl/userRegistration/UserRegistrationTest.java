@@ -45,4 +45,12 @@ public class UserRegistrationTest {
 		UserRegistration userRegistration = new UserRegistration();
 		Assert.assertTrue(userRegistration.validPasswordRule2("Bhagavandas"));
 	}
+
+
+	//testing the given input is true or not using assertions
+	@Test
+	public void validPasswordRule3() {
+		UserRegistration userRegistration = new UserRegistration();
+		Assert.assertTrue(userRegistration.validPasswordRule3("Bhagavandas2"));
+	}
 }
