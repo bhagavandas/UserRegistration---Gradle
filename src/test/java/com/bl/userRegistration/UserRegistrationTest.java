@@ -12,5 +12,9 @@ public class UserRegistrationTest {
 
 	}
 
-
+	@Test
+	public void validLastName() {
+		UserRegistration userRegistration = new UserRegistration();
+		Assert.assertTrue(userRegistration.validLastName("Bhagavan"));
+	}
 }
