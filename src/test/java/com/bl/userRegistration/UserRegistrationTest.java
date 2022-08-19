@@ -35,7 +35,7 @@ public class UserRegistrationTest {
 	@Test
 	public void validMobileNum() {
 		UserRegistration userRegistration = new UserRegistration();
-		Assert.assertTrue(userRegistration.validEmail("abc.xyz@bl.co.in"));
+		Assert.assertTrue(userRegistration.validMobileNum("91 9010626122"));
 	}
 
 
@@ -46,6 +46,13 @@ public class UserRegistrationTest {
 		Assert.assertTrue(userRegistration.validPasswordRule2("Bhagavandas"));
 	}
 
+
+	//testing the given input is true or not using assertions
+	@Test
+	public void validPasswordRule3() {
+		UserRegistration userRegistration = new UserRegistration();
+		Assert.assertTrue(userRegistration.validPasswordRule3("Bhagavandas2"));
+	}
 
 	//testing the given input is true or not using assertions
 	@Test
