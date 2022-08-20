@@ -10,7 +10,7 @@ public class UserRegistrationTest {
 	@Test
 	public void validFirstName() {
 		UserRegistration userRegistration = new UserRegistration();
-		Assert.assertTrue(userRegistration.validFirstName("Kommu"));
+		Assert.assertTrue(userRegistration.isvalidFirstName("Kommu"));
 
 	}
 
@@ -18,7 +18,7 @@ public class UserRegistrationTest {
 	@Test
 	public void validLastName() {
 		UserRegistration userRegistration = new UserRegistration();
-		Assert.assertTrue(userRegistration.validLastName("Kommu"));
+		Assert.assertTrue(userRegistration.isvalidLastName("Kommu"));
 
 	}
 
@@ -27,7 +27,7 @@ public class UserRegistrationTest {
 	@Test
 	public void validEmail() {
 		UserRegistration userRegistration = new UserRegistration();
-		Assert.assertTrue(userRegistration.validEmail("abc.xyz@bl.co.in"));
+		Assert.assertTrue(userRegistration.isvalidEmail("abc.xyz@bl.co.in"));
 	}
 
 
@@ -35,7 +35,15 @@ public class UserRegistrationTest {
 	@Test
 	public void validMobileNum() {
 		UserRegistration userRegistration = new UserRegistration();
-		Assert.assertTrue(userRegistration.validMobileNum("91 9010626122"));
+		Assert.assertTrue(userRegistration.isvalidMobileNum("91 9010626122"));
+	}
+
+
+	//testing the given input is true or not using assertions
+	@Test
+	public void validPassword() {
+		UserRegistration userRegistration = new UserRegistration();
+		Assert.assertTrue(userRegistration.isvalidPassword("bhagavandas"));
 	}
 
 
@@ -43,7 +51,7 @@ public class UserRegistrationTest {
 	@Test
 	public void validPasswordRule2() {
 		UserRegistration userRegistration = new UserRegistration();
-		Assert.assertTrue(userRegistration.validPasswordRule2("Bhagavandas"));
+		Assert.assertTrue(userRegistration.isvalidPasswordRule2("Bhagavandas"));
 	}
 
 
@@ -51,13 +59,20 @@ public class UserRegistrationTest {
 	@Test
 	public void validPasswordRule3() {
 		UserRegistration userRegistration = new UserRegistration();
-		Assert.assertTrue(userRegistration.validPasswordRule3("Bhagavandas2"));
+		Assert.assertTrue(userRegistration.isvalidPasswordRule3("Bhagavandas2"));
 	}
 
 	//testing the given input is true or not using assertions
 	@Test
 	public void validPasswordRule4() {
 		UserRegistration userRegistration = new UserRegistration();
-		Assert.assertTrue(userRegistration.validPasswordRule4("Bhagavandas2@"));
+		Assert.assertTrue(userRegistration.isvalidPasswordRule4("Bhagavandas2@"));
+	}
+
+	//testing the given input is true or not using assertions
+	@Test
+	public void validemailSamples() {
+		UserRegistration userRegistration = new UserRegistration();
+		Assert.assertTrue(userRegistration.isvalidemailSamples("abc@yahoo.com"));
 	}
 }

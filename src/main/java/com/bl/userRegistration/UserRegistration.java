@@ -6,14 +6,14 @@ import java.util.regex.Pattern;
 
 // validating the first name using regex pattern
 public class UserRegistration {
-        public boolean validFirstName(String fName) {
+        public boolean isvalidFirstName(String fName) {
             Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}$");
                //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
                Matcher matcher = pattern.matcher(fName);
                return matcher.matches();
         }
 // validating the last name using regex pattern
-    public boolean validLastName(String fName) {
+    public boolean isvalidLastName(String fName) {
         Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}$");
         //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
         Matcher matcher = pattern.matcher(fName);
@@ -21,7 +21,7 @@ public class UserRegistration {
     }
 
     // validating the email using regex pattern
-    public boolean validEmail(String email) {
+    public boolean isvalidEmail(String email) {
         Pattern pattern = Pattern.compile("[abc+](.+)?[a-z](@)?[bl+](.+)[co+](.+)[a-z]{2}$");
         //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
         Matcher matcher = pattern.matcher(email);
@@ -30,7 +30,7 @@ public class UserRegistration {
 
 
     // validating the mobile number using regex pattern that is country code followed by space and 10 digit number
-    public boolean validMobileNum(String mobNum) {
+    public boolean isvalidMobileNum(String mobNum) {
         Pattern pattern = Pattern.compile("[0-9]{2}\\s{0,1}[0-9]{10}$");
         //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
         Matcher matcher = pattern.matcher(mobNum);
@@ -38,7 +38,7 @@ public class UserRegistration {
     }
 
     // validating the password that has minimum 8 characters
-    public boolean validPassword(String pwd) {
+    public boolean isvalidPassword(String pwd) {
         Pattern pattern = Pattern.compile("[a-z]{8,}$");
         //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
         Matcher matcher = pattern.matcher(pwd);
@@ -47,7 +47,7 @@ public class UserRegistration {
 
 
     // validating the password that has minimum 8 characters and one uppercase
-    public boolean validPasswordRule2(String pwd) {
+    public boolean isvalidPasswordRule2(String pwd) {
         Pattern pattern = Pattern.compile("[A-Z]{1}[a-z]{8,}$");
         //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
         Matcher matcher = pattern.matcher(pwd);
@@ -56,7 +56,7 @@ public class UserRegistration {
 
 
     // validating the password that has minimum 8 characters and one uppercase and obe numeric
-    public boolean validPasswordRule3(String pwd) {
+    public boolean isvalidPasswordRule3(String pwd) {
         Pattern pattern = Pattern.compile("[A-Z]{1}[a-z]{8,}[0-9]{1,}$");
         //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
         Matcher matcher = pattern.matcher(pwd);
@@ -65,8 +65,17 @@ public class UserRegistration {
 
 
     // validating the password that has minimum 8 characters and one uppercase and obe numeric and one special character
-    public boolean validPasswordRule4(String pwd) {
+    public boolean isvalidPasswordRule4(String pwd) {
         Pattern pattern = Pattern.compile("[A-Z]{1}[a-z]{8,}[0-9]{1,}(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).$");
+        //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
+        Matcher matcher = pattern.matcher(pwd);
+        return matcher.matches();
+    }
+
+
+    // validating the password that has minimum 8 characters and one uppercase and obe numeric and one special character
+    public boolean isvalidemailSamples(String pwd) {
+        Pattern pattern = Pattern.compile("[abc+](?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).[a-z](.+)[com+]$");
         //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
         Matcher matcher = pattern.matcher(pwd);
         return matcher.matches();
