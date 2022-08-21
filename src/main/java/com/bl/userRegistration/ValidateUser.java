@@ -8,7 +8,7 @@ public class ValidateUser {
 
     final String email = "[a-z]{3,}(.+)?[a-z](@)?[bl+](.+)[co+](.+)[a-z]{2}$";
     final String phoneNum = "[0-9]{2}\\s{0,1}[0-9]{10}$";
-    final String password = "[A-Z]{1}[a-z]{8,}[0-9]{1,}(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).$";
+    final String password = "^[A-Z]{1}[a-z]{8,}[0-9]{1,}(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).$";
 
     public boolean isValidatefName(String name) {
 
