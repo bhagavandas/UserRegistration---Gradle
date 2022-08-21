@@ -73,9 +73,9 @@ public class UserRegistration {
     }
 
 
-    // validating the password that has minimum 8 characters and one uppercase and obe numeric and one special character
+    // validating the emails
     public boolean isvalidemailSamples(String pwd) {
-        Pattern pattern = Pattern.compile("[abc+](?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).[a-z](.+)[com+]$");
+        Pattern pattern = Pattern.compile("[a-z]{3,}(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).[a-z](.+)[com+]$");
         //Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}+$");
         Matcher matcher = pattern.matcher(pwd);
         return matcher.matches();

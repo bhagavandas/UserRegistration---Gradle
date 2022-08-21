@@ -59,7 +59,7 @@ public class UserRegistrationTest {
 	@Test
 	public void validPasswordRule3() {
 		UserRegistration userRegistration = new UserRegistration();
-		Assert.assertTrue(userRegistration.isvalidPasswordRule3("Bhagavandas2"));
+		Assert.assertTrue(userRegistration.isvalidPasswordRule3("Bhagavand2"));
 	}
 
 	//testing the given input is true or not using assertions
@@ -73,6 +73,6 @@ public class UserRegistrationTest {
 	@Test
 	public void validemailSamples() {
 		UserRegistration userRegistration = new UserRegistration();
-		Assert.assertTrue(userRegistration.isvalidemailSamples("abc@yahoo.com"));
+		Assert.assertTrue(userRegistration.isvalidemailSamples("das@yahoo.com"));
 	}
 }
